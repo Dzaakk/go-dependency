@@ -1,13 +1,13 @@
-package simple
-
 //go:build wireinject
 // +build wireinject
+
+package simple
 
 import "github.com/google/wire"
 
 func InitializedService() *SimpleService {
 	wire.Build(
-		NewSimpleRepository, NewSimpleService
+		NewSimpleRepository, NewSimpleService,
 	)
 	return nil
 }
