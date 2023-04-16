@@ -1,7 +1,7 @@
+package simple
+
 //go:build wireinject
 // +build wireinject
-
-package simple
 
 import "github.com/google/wire"
 
